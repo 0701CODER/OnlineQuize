@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+{% load static %}
+<!--
+	Hielo by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>DEPARTMENT MANAGEMENT SYSTEM</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="{% static 'assets/css/main.css' %}" />
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header" class="alt">
+				<div class="logo"><a href="/tem/">DEPARTMENTAL<span>STORE</span></a></div>
+				<a href="#menu">Menu</a>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="/tem/">Home</a></li>
+					<li><a href="{% url 'reg' %}">Register</a></li>
+					<li><a href="/login_details/">User Login</a></li>
+					<li><a href="{% url 'admin_login' %}">Admin Login</a></li>
+					<li><a href="{% url 'product_list' %}">Products</a></li>
+					
+				</ul>
+			</nav>
+
+		<!-- Banner -->
+			<section class="banner full">
+				<article>
+					<img src="{% static 'images/images1.jpg' %}" alt="" />
+					<div class="inner">
+						<header>
+							<p>DEPARTMENTAL MANAGEMENT SYSTEM <a href="https://templated.co"></a></p>
+							<h2>SHOPPING ZONE</h2>
+						</header>
+					</div>
+				</article>
+				<article>
+					<img src="{% static 'images/HCCertifiedFoods.jpg' %}" alt="" />
+					<div class="inner">
+					</div>
+				</article>
+				<article>
+					<img src="{% static 'images/images.jpg' %}"  alt="" />
+					<div class="inner">
+					</div>
+				</article>
+				<article>
+					<img src="{% static 'images/d1.jpg' %}"  alt="" />
+					<div class="inner">
+					</div>
+				</article>
+				<article>
+					<img src="{% static 'images/cute.jpg' %}"  alt="" />
+					<div class="inner">
+					</div>
+				</article>
+			</section>
+
+
+		<!-- Scripts -->
+			<script src="{% static 'assets/js/jquery.min.js' %}"></script>
+			<script src="{% static 'assets/js/jquery.scrollex.min.js' %}"></script>
+			<script src="{% static 'assets/js/skel.min.js' %}"></script>
+			<script src="{% static 'assets/js/util.js' %}"></script>
+			<script src="{% static 'assets/js/main.js' %}"></script>
+
+	</body>
+</html>
